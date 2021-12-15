@@ -1,2 +1,3 @@
 # the-cost-of-logging-examples
-Examples of: https://www.nearform.com/blog/the-cost-of-logging/
+
+Examples of blog post: https://www.nearform.com/blog/the-cost-of-logging/
