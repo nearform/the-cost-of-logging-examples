@@ -2,10 +2,18 @@
 
 const app = require('express')()
 
-app.use(require('express-bunyan-logger')())
+function main() {
+  app.use(require('express-bunyan-logger')())
 
-app.get('/', function (req, res) {
-  res.send('hello world')
-})
+  app.get('/', function (req, res) {
+    res.send('hello world')
+  })
 
-app.listen(3000)
+  return app.listen(3000)
+}
+
+if (require.main === 'module') {
+  main()
+} else {
+  module.exports = main
+}
