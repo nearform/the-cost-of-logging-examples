@@ -16,7 +16,7 @@ function main() {
   return app.listen(3000)
 }
 
-if (require.main === 'module') {
+if (require.main === module) {
   main()
 } else {
   module.exports = main
